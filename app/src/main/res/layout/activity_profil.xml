@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:elevation="5dp"
+    tools:context=".profil">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_profil"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconSize="25dp"
+        app:itemPaddingTop="20dp"
+        app:menu="@menu/menu_bottom" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/profil"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_profili_duzenle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_profil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/profili_duzenle"
+        android:textSize="24sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_profil"
+        android:layout_width="365dp"
+        android:layout_height="330dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_border"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="5dp">
+
+            <TextView
+                android:id="@+id/textView_ad_veri"
+                android:layout_width="205dp"
+                android:layout_height="38dp"
+                android:layout_alignStart="@id/textView_ad"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/poppins"
+                android:paddingTop="5dp"
+                android:text="Lorem ipsum sit amet"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView_soyad_veri"
+                android:layout_width="205dp"
+                android:layout_height="38dp"
+                android:layout_below="@id/textView_ad_veri"
+                android:layout_alignStart="@id/textView_soyad"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:paddingTop="5dp"
+                android:text="Lorem ipsum sit amet"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView_eposta_veri"
+                android:layout_width="205dp"
+                android:layout_height="38dp"
+                android:layout_below="@id/textView_soyad_veri"
+                android:layout_alignStart="@id/textView_eposta"
+                android:layout_centerInParent="false"
+                android:layout_marginStart="111dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:paddingTop="5dp"
+                android:text="Lorem ipsum sit amet"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView_telefon_veri"
+                android:layout_width="205dp"
+                android:layout_height="38dp"
+                android:layout_below="@id/textView_eposta_veri"
+                android:layout_alignStart="@id/textView_telefon"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:paddingTop="5dp"
+                android:text="Lorem ipsum sit amet"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/ad"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_soyad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_ad"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/soyad"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_eposta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_soyad"
+                android:layout_centerInParent="false"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="34dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/eposta"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_telefon"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_eposta"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/telefon"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

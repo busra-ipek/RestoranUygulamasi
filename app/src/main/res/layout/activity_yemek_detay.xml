@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".yemekDetay">
+
+    <ImageButton
+        android:id="@+id/imageButton_back_yemekCesit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="65dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/icon_arrow_left" />
+
+    <TextView
+        android:id="@+id/textView_yemek_adi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageButton_back_yemekCesit"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imageButton_back_yemekCesit"
+        android:fontFamily="@font/poppins"
+        android:text="@string/tatli"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/textView_yemek_aciklama"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/card_yemek_detay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/poppins"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem         Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer          took a galley of type and scrambled it to make a type specimen book.       ."
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:ignore="ExtraText" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_yemek_detay"
+        android:layout_width="330dp"
+        android:layout_height="310dp"
+        android:layout_below="@id/textView_yemek_adi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:id="@+id/imageView_yemek_resim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_yemek_detay"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconSize="25dp"
+        app:itemPaddingTop="20dp"
+        app:menu="@menu/menu_bottom" />
+
+</RelativeLayout>

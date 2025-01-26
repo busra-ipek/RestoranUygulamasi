@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kayitOl"
+    android:background="@drawable/wallpaper_kayitol">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kayit"
+        android:layout_width="351dp"
+        android:layout_height="580dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="116dp"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/kayitOl_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/kayitOl"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/ad"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/adEditText"
+            android:layout_width="280dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Adınızı girin"
+            android:inputType="text"
+            android:singleLine="false"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/soyad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="170dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/soyad"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/soyadEditText"
+            android:layout_width="280dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="210dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Soyadınızı girin"
+            android:inputType="text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/eposta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="270dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/eposta"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/epostaEditText"
+            android:layout_width="280dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="310dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="E postanızı girin"
+            android:inputType="text|textEmailAddress"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/telefon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="370dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/telefon"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/telefonEditText"
+            android:layout_width="280dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="410dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Telefon numaranızı girin"
+            android:inputType="phone"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/sifre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="470dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/sifre"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/sifreEditText"
+            android:layout_width="280dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="510dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Şifrenizi girin"
+            android:inputType="text|textPassword"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_kayit_ol"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginBottom="55dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/kayitOl"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:cornerRadius="22dp" />
+
+</RelativeLayout>

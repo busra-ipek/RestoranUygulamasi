@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".yemekCesitleri">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_yemek_cesitleri"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconSize="25dp"
+        app:itemPaddingTop="20dp"
+        app:menu="@menu/menu_bottom" />
+
+    <ImageButton
+        android:id="@+id/imageButton_back_ana_menu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="65dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/icon_arrow_left" />
+
+    <TextView
+        android:id="@+id/textView_yemekCesitIsmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/tatli"
+        android:textSize="26sp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_yemek1"
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/orange"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_yemek_resim1"
+                        android:layout_width="160dp"
+                        android:layout_height="110dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/kategori_makarna" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView_yemek_isim1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/card_yemek_resim1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim1"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Yemek Adı"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView_kalori1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView_yemek_isim1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim1"
+                        android:fontFamily="@font/poppins"
+                        android:text="390 kcal"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_fiyat1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="100 TL"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_yemek2"
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/krem"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_yemek_resim2"
+                        android:layout_width="160dp"
+                        android:layout_height="110dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/kategori_makarna" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView_yemek_isim2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/card_yemek_resim2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim2"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Yemek Adı"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView_kalori2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView_yemek_isim2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim2"
+                        android:fontFamily="@font/poppins"
+                        android:text="390 kcal"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_fiyat2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="100 TL"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_yemek3"
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/orange"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_yemek_resim3"
+                        android:layout_width="160dp"
+                        android:layout_height="110dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/kategori_makarna" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView_yemek_isim3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/card_yemek_resim3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim3"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Yemek Adı"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView_kalori3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView_yemek_isim3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim3"
+                        android:fontFamily="@font/poppins"
+                        android:text="390 kcal"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_fiyat3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="100 TL"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_yemek4"
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/krem"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_yemek_resim4"
+                        android:layout_width="160dp"
+                        android:layout_height="110dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/kategori_makarna" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView_yemek_isim4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/card_yemek_resim4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim4"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Yemek Adı"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView_kalori4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView_yemek_isim4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim4"
+                        android:fontFamily="@font/poppins"
+                        android:text="390 kcal"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_fiyat4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="100 TL"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_yemek5"
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/orange"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_yemek_resim5"
+                        android:layout_width="160dp"
+                        android:layout_height="110dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/kategori_makarna" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView_yemek_isim5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/card_yemek_resim5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim5"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Yemek Adı"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView_kalori5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView_yemek_isim5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim5"
+                        android:fontFamily="@font/poppins"
+                        android:text="390 kcal"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_fiyat5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="100 TL"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_yemek6"
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/krem"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_yemek_resim6"
+                        android:layout_width="160dp"
+                        android:layout_height="110dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/kategori_makarna" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView_yemek_isim6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/card_yemek_resim6"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim6"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Yemek Adı"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView_kalori6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView_yemek_isim6"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim6"
+                        android:fontFamily="@font/poppins"
+                        android:text="390 kcal"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_fiyat6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="100 TL"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_yemek7"
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/orange"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_yemek_resim7"
+                        android:layout_width="160dp"
+                        android:layout_height="110dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/kategori_makarna" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView_yemek_isim7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/card_yemek_resim7"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim7"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Yemek Adı"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView_kalori7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView_yemek_isim7"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim7"
+                        android:fontFamily="@font/poppins"
+                        android:text="390 kcal"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_fiyat7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="100 TL"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_yemek8"
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="@color/krem"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_yemek_resim8"
+                        android:layout_width="160dp"
+                        android:layout_height="110dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/kategori_makarna" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView_yemek_isim8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/card_yemek_resim8"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim8"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Yemek Adı"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView_kalori8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView_yemek_isim8"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/card_yemek_resim8"
+                        android:fontFamily="@font/poppins"
+                        android:text="390 kcal"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_fiyat8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="100 TL"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

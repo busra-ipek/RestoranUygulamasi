@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".profilDuzenle">
+
+    <ImageButton
+        android:id="@+id/imageButton_back_profil"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="65dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/icon_arrow_left" />
+
+    <TextView
+        android:id="@+id/textView_profil_duzenle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/imageButton_back_profil"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@id/imageButton_back_profil"
+        android:fontFamily="@font/poppins"
+        android:text="@string/profili_duzenle"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/button_kaydet"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_profil_duzenle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/kaydet"
+        android:textSize="24sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_hesap_sil"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/button_kaydet"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="165dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false">
+
+        <TextView
+            android:id="@+id/textView_hesap_sil"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingTop="10dp"
+            android:text="@string/hesabi_sil"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView_hesap_sil"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/icon_trash" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_profil_duzenle"
+        android:layout_width="370dp"
+        android:layout_height="330dp"
+        android:layout_below="@id/textView_profil_duzenle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/ad"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_ad_giris"
+                android:layout_width="235dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/textView_ad"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textView_soyad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_ad"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/soyad"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_soyad_giris"
+                android:layout_width="235dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_ad_giris"
+                android:layout_alignLeft="@id/editText_ad_giris"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textView_eposta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_soyad"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/eposta"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_eposta_giris"
+                android:layout_width="235dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_soyad_giris"
+                android:layout_alignLeft="@id/editText_ad_giris"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:inputType="text|textEmailAddress" />
+
+            <TextView
+                android:id="@+id/textView_telefon"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_eposta"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/telefon"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_telefon_giris"
+                android:layout_width="235dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_eposta_giris"
+                android:layout_alignLeft="@id/editText_ad_giris"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/textView_sifre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_telefon"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/sifre"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_sifre_giris"
+                android:layout_width="235dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText_telefon_giris"
+                android:layout_alignLeft="@id/editText_ad_giris"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/edittext_border"
+                android:clickable="false"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:inputType="text" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
